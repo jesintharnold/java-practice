@@ -3,6 +3,7 @@ package DesignPatterns.Singleton;
 
 public class FileBasedConfigurationManagerImpl extends FileBasedConfigurationManager {
 
+    private  static FileBasedConfigurationManagerImpl manager;
     @Override
     public String getConfiguration(String key) {
         // TODO Auto-generated method stub
@@ -40,12 +41,14 @@ public class FileBasedConfigurationManagerImpl extends FileBasedConfigurationMan
     }
 
     public static FileBasedConfigurationManager getInstance() {
-        // TODO Auto-generated method stub
-        return null;
+        if(manager==null){
+            manager=new FileBasedConfigurationManagerImpl();
+        };
+        return manager;
     }
 
     public static void resetInstance() {
-        // TODO Auto-generated method stub
+        manager=null;
     }
 
 }
