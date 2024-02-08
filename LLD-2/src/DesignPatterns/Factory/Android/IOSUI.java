@@ -1,4 +1,4 @@
-package DesignPatterns.Factory;
+package DesignPatterns.Factory.Android;
 
 import DesignPatterns.Factory.components.IOSMenu;
 import DesignPatterns.Factory.components.Menu;
