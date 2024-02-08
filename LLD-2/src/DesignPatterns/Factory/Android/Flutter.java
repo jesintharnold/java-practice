@@ -1,4 +1,4 @@
-package DesignPatterns.Factory;
+package DesignPatterns.Factory.Android;
 
 public class Flutter{
     public void render(){
